@@ -1,0 +1,39 @@
+.content-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos generales */
+:root {
+    --primary-color: #02cbc4;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 60px 0;
+    }
+}

@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Si el archivo o carpeta existe realmente, no aplicar la redirección
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todo a index.php pasando la ruta como un parámetro 'url'
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
